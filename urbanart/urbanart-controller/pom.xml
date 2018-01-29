@@ -20,10 +20,15 @@
 			<version>${org.springframework.version}</version>
 		</dependency>
 		
-		<dependency>
+		<!-- dependency>
 			<groupId>org.codehaus.jackson</groupId>
 			<artifactId>jackson-jaxrs</artifactId>
-			<version>1.9.9</version>
+			<version>${jackson.version}</version>
+		</dependency-->
+		<dependency>
+		   <groupId>com.fasterxml.jackson.jaxrs</groupId>
+		   <artifactId>jackson-jaxrs-json-provider</artifactId>
+		   <version>${jackson.version}</version>
 		</dependency>
 	</dependencies>
 

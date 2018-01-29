@@ -18,7 +18,7 @@ public class LoginController {
 
 		LOG.info("Received body: " + name);
 		
-		String result = null;
+		String result = "Welcome " + name;
 		
 		final ModelAndView mav = new ModelAndView("jsonView");
 		mav.addObject("response", result);

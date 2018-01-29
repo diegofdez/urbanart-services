@@ -17,7 +17,8 @@
 	
     <context:component-scan base-package="com.diegofdez.urbanart.controller"/>
 
-	<bean id="jacksonMessageConverter" class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter" />
+	<bean id="jacksonMessageConverter" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter" />
+	
 	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
 		<property name="messageConverters">
 		  <list>
@@ -31,6 +32,6 @@
 		returned by the method -->
 	<bean class="org.springframework.web.servlet.view.BeanNameViewResolver" />
 	<!-- View that prints a Map as a JSON file -->
-	<bean id="jsonView" class="org.springframework.web.servlet.view.json.MappingJacksonJsonView" /> 
+	<bean id="jsonView" class="org.springframework.web.servlet.view.json.MappingJackson2JsonView" /> 
 
 </beans>
